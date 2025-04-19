@@ -1,0 +1,8 @@
+int arraySign(int* nums, int numsSize) {
+    int p = 1;
+    for(int i=0;i<numsSize;i++){
+        if(nums[i]==0) return 0;
+        if(nums[i]<0) p*=-1;
+    }
+    return p;
+}
